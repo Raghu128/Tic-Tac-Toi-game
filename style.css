@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #548687;
+  background-image: url(background.jpg);
+  text-align: center;
+}
+
+.topText #heading{
+  text-shadow: 5px 5px 8px rgb(0, 244, 252);
+}
+
+.backGroundImag1 {
+  background-image: url(background.jpg);
+}
+
+.backGroundImag2 {
+  background-image: url(demo-image-2.png);
+}
+
+.topText{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scoreBox{
+  display: flex;
+  flex-direction: row;
+  width: 100em;
+  justify-content: space-around;
+}
+
+#playerScore {
+  color: white;
+  font-size: 2.5em;
+  justify-self: center;
+  align-self: center;
+  text-shadow: 5px 5px 8px rgb(0, 244, 252);
+}
+
+#playerScoreBox:hover{
+  scale: 2;
+  
+}
+
+#compScore{
+  color: white;
+  font-size: 2.5em;
+  justify-self: center;
+  align-self: center;
+  text-shadow: 5px 5px 8px rgb(0, 244, 252);
+}
+
+#compScoreBox:hover{
+  scale: 2;
+}
+
+.winnerCount {
+  display: flex;
+  flex-direction: row;
+  width: 30em;
+  height: 5em;
+  justify-content: space-around;
+}
+
+.container {
+  height: 70vh;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+#heading{
+  color: white;
+  margin-top: 0.6em;  
+}
+
+
+.game {
+  height: 60vmin;
+  width: 60vmin;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3vmin;
+}
+
+.box {
+  height: 18vmin;
+  width: 18vmin;
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 0px 0px 70px 10px rgb(10, 117, 239);
+  font-size: 8vmin;
+  color: #1f96da;
+  background-color: #ffffc7;
+}
+
+.box:hover{
+  transform: scale(1.1);
+
+}
+
+#reset-btn {
+  padding: 1rem;
+  font-size: 1.25rem;
+  background-color: #191913;
+  color: #fff;
+  border-radius: 1rem;
+  border: none;
+}
+
+#reset-btn:hover{
+  scale: 1.4;
+  background-color: red;
+}
+
+#new-btn {
+  padding: 1rem;
+  font-size: 1.25rem;
+  background-color: #191913;
+  color: #fff;
+  border-radius: 1rem;
+  border: none;
+}
+
+#msg {
+  color: #ffffc7;
+  font-size: 5vmin;
+}
+
+.msg-container {
+  height: 100vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.hide {
+  display: none;
+}
+
+
+/* #mode {
+  border: none;
+  height: 6vmin;
+  width: 7vmin;
+  border-radius: 0.5rem;
+  color: white;
+  border: none;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+  font-size: 2vmin;
+  background-color:#00cbf994;
+  align-items : flex-start;
+}
+
+#mode:hover{
+  scale: 1.2;
+  background-color: aqua;
+  color: black;
+} */
+
+#modes{
+  border: none;
+  height: 6vmin;
+  width: 7vmin;
+  border-radius: 0.5rem;
+  color: white;
+  border: none;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+  font-size: 2vmin;
+  background-color:#00cbf994;
+  align-items : flex-start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#modes:hover{
+  scale: 1.2;
+  background-color: aqua;
+  color: black;
+}
+
+.choosePlayer{
+display: flex;
+font-size: 40px;
+flex-direction: column;
+}
+
+
+.win-animation {
+animation-name: win;
+animation-duration: 1s;
+animation-timing-function: ease-in-out;
+animation-iteration-count: 1;
+}
+
+@keyframes win {
+0% {
+    transform: scale(1);
+}
+25% {
+    transform: scale(1.2);
+}
+50% {
+    transform: scale(1.1);
+}
+75% {
+    transform: scale(1.2);
+}
+100% {
+    transform: scale(1);
+}
+}
+
+
+
+.reset-animation {
+animation-name: reset;
+animation-duration: 0.5s;
+animation-timing-function: ease-in-out;
+animation-iteration-count: 1;
+}
+
+@keyframes reset {
+from {
+    transform: scale(0.5);
+}
+
+to {
+    transform: scale(1);
+}
+}
+
+
+header {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 1em;
+  margin-left: 1em;
+  gap: 2em;
+}
+
+#play-button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2vmin;
+  padding: 10px;
+  height: 6vmin;
+  width: 7vmin;
+  border-radius: 0.5em;
+  border: none;
+  background-color: #00cbf97d;
+
+}
+
+#play-button:hover{
+  scale: 1.2;
+  background-color: aqua;
+  color: black;
+}

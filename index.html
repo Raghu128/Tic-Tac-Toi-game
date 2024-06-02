@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content=" IIITD Project Raghu Kumar Tic-Tac-Toe Game raghu128 Tic Tac Toe">
+    <title>Tic-Tac-Toe Game</title>
+    <link rel="stylesheet" href="style.css" />
+    
+  </head>
+  <body>
+
+    <audio src="mixkit-game-bonus-reached-2065.wav" id="winnerAudio"></audio>
+    
+
+    <header >
+          <audio src="6VWVNRL-musical-sequence-click-click-click-01.mp3"  loop id="backAudio"></audio>
+          <button id="play-button">Play</button>
+          <select name="mode" id="modes">
+            <option value="easy">Easy</option>
+            <option value="expert">Expert</option>
+          </select>
+      
+    </header>
+   
+    
+    
+    
+    
+    <main>
+      <div class="topText">
+        <div class="winnerCount">
+
+          <div class="scoreBox" id="playerScoreBox">
+            <h1 id="heading">Your-Score =  </h1>
+            <h1 id="playerScore">0</h1>
+          </div>
+
+          <div class="scoreBox" id="compScoreBox">
+            <h1 id="heading" > Comp-Score = </h1>
+            <h1 id="compScore">0</h1>
+          </div>
+
+        </div>
+        
+      </div>
+
+      <div class="container">
+        <div class="game">
+          <audio src="notifications_5.mp3" id="select-sound"></audio>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+        </div>
+      </div>
+      <button id="reset-btn">Reset Game</button>
+    </main>
+
+
+
+
+    <script src="node.js"></script>
+  </body>
+</html>
